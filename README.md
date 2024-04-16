@@ -20,15 +20,6 @@ Panel Path: /app/
 Subscription Port: 2096
 Subscription Path: /sub/
 User/Passowrd: admin
-Install & Upgrade to Latest Version
-bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh)
-Install Custom Version
-Step 1: To install your desired version, add the version to the end of the installation command. e.g., ver 0.0.1:
-
-bash <(curl -Ls https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh) 0.0.1
-Uninstall S-UI
-systemctl disable sing-box --now
-systemctl disable s-ui  --now
 
 rm -f /etc/systemd/system/s-ui.service
 rm -f /etc/systemd/system/sing-box.service
